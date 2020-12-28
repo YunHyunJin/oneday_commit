@@ -21,6 +21,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:sliver_fab/sliver_fab.dart';
 
+import '../map.dart';
 import 'widgets/empty_list.dart';
 import 'model/data.dart' as data;
 import 'model/restaurant.dart';
@@ -162,6 +163,18 @@ class _RestaurantPageState extends State<RestaurantPage> {
                         ),
                 ],
               ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              heroTag: 'one',
+              backgroundColor: Colors.amber,
+              child: const Icon(Icons.add_location),
+              onPressed: () {
+                print("ddd");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => map()),
+                );
+              },
             ),
           );
   }
