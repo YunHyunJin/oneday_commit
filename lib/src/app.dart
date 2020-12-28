@@ -32,7 +32,6 @@ class FriendlyEatsApp extends StatelessWidget {
                     ));
             break;
           default:
-            
             // return MaterialPageRoute(
             //     builder: (context) => RestaurantPage(
             //           restaurantId: 'lV81npEeboEActMpUJjn',
